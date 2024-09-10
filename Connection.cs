@@ -14,6 +14,5 @@ public class Connection{
         con = new SqlConnection(connection);
         cmd = new SqlCommand();
         cmd.Connection = con;
-        Console.WriteLine("Successfully Connected");
     }
 }
