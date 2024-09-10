@@ -5,8 +5,6 @@ public class Connection{
     public SqlConnection con;
     public SqlCommand cmd;
     public SqlDataAdapter da;
-    public DataSet ds;
-    public DataTable dt;
 
     public Connection()
     {
