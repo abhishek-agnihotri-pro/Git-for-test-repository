@@ -5,14 +5,14 @@ class StudentAction
 {
     static DataSet ds;
     static DataTable dt;
-    public static void StudnetSequence(){
+    public static void StudnetSequence(User user){
     UserRepository userRepository=new();
-    System.Console.WriteLine("----------Sign In---------");
-    System.Console.WriteLine("Enter Username:");
-    string? username=Console.ReadLine();
-    System.Console.WriteLine("Enter Password:");
-    string? passowrd=Console.ReadLine();
-    User user=userRepository.LoginUser(username,passowrd);
+    System.Console.WriteLine("----------Loggedin as Student---------");
+    // System.Console.WriteLine("Enter Username:");
+    // string? username=Console.ReadLine();
+    // System.Console.WriteLine("Enter Password:");
+    // string? passowrd=Console.ReadLine();
+    // User user=userRepository.LoginUser(username,passowrd);
     CourseRepository courseRepository=new();
     bool flag=true;
     while(flag){

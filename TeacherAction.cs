@@ -5,14 +5,15 @@ class TeacherAction
 {
     static DataSet ds;
     static DataTable dt;
-    public static void TeacherSequence(){
-    UserRepository userRepository=new();
-    System.Console.WriteLine("----------LogIn---------");
-    System.Console.WriteLine("Enter Username:");
-    string? username=Console.ReadLine();
-    System.Console.WriteLine("Enter Password:");
-    string? passowrd=Console.ReadLine();
-    User user=userRepository.LoginUser(username,passowrd);
+    public static void TeacherSequence(User user){
+    // UserRepository userRepository=new();
+    System.Console.WriteLine("----------Loggedin as Teacher/Admin ---------");
+    // System.Console.WriteLine("Enter Username:");
+    // string? username=Console.ReadLine();
+    // System.Console.WriteLine("Enter Password:");
+    // string? passowrd=Console.ReadLine();
+    // User user=userRepository.LoginUser(username,passowrd);
+
     CourseRepository courseRepository=new();
     bool flag=true;
     while(flag){

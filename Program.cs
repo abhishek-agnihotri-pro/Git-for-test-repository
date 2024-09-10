@@ -4,15 +4,26 @@ class Program
 {
     public static void Main(string[] args){
 
-        Console.Write("Press 1 to start as Student or Press 2 for Teacher : ");
-        int navigate = Convert.ToInt32(Console.ReadLine());
-        
-        switch(navigate){
-            case 1:
-                StudentAction.StudnetSequence();
+        // Console.Write("Press 1 to start as Student or Press 2 for Teacher : ");
+        System.Console.WriteLine("----------Sign In---------");
+        System.Console.WriteLine("Enter Username:");
+        string? username=Console.ReadLine();
+        System.Console.WriteLine("Enter Password:");
+        string? passowrd=Console.ReadLine();
+
+        // int navigate = Convert.ToInt32(Console.ReadLine());
+        UserRepository userRepository = new UserRepository();
+        User user = userRepository.LoginUser(username,passowrd);
+        user.UserRole = user.UserRole.ToLower();
+        switch(user.UserRole){
+            case "teacher":
+                TeacherAction.TeacherSequence(user);
                 break;
-            case 2:
-                TeacherAction.TeacherSequence();
+            case "admin":
+                TeacherAction.TeacherSequence(user);
+                break;
+            default:
+                StudentAction.StudnetSequence(user);
                 break;
 
         }

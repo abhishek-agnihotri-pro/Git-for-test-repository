@@ -131,6 +131,7 @@ class UserRepository : IUserRepository
             user.UserId = (int)dt.Rows[0]["userId"];
             user.UserName = (string)dt.Rows[0]["username"];
             user.Password = (string)dt.Rows[0]["password"];
+            user.UserRole = (string)dt.Rows[0]["role"];
             return user; 
         }
         else return user;

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ADO_Layered")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3157650422a56b90e97aa27311beeeaff8443d55")]
 [assembly: System.Reflection.AssemblyProductAttribute("ADO_Layered")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ADO_Layered")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\.NetTrainings\\ADO_Layered\\ADO_Layered.csproj": {}
+    "C:\\Users\\abhishek.agnihotri\\Desktop\\Git-for-test-repository\\ADO_Layered.csproj": {}
   },
   "projects": {
-    "D:\\.NetTrainings\\ADO_Layered\\ADO_Layered.csproj": {
+    "C:\\Users\\abhishek.agnihotri\\Desktop\\Git-for-test-repository\\ADO_Layered.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.NetTrainings\\ADO_Layered\\ADO_Layered.csproj",
+        "projectUniqueName": "C:\\Users\\abhishek.agnihotri\\Desktop\\Git-for-test-repository\\ADO_Layered.csproj",
         "projectName": "ADO_Layered",
-        "projectPath": "D:\\.NetTrainings\\ADO_Layered\\ADO_Layered.csproj",
+        "projectPath": "C:\\Users\\abhishek.agnihotri\\Desktop\\Git-for-test-repository\\ADO_Layered.csproj",
         "packagesPath": "C:\\Users\\abhishek.agnihotri\\.nuget\\packages\\",
-        "outputPath": "D:\\.NetTrainings\\ADO_Layered\\obj\\",
+        "outputPath": "C:\\Users\\abhishek.agnihotri\\Desktop\\Git-for-test-repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\abhishek.agnihotri\\AppData\\Roaming\\NuGet\\NuGet.Config"
