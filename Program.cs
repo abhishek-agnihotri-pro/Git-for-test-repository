@@ -1,4 +1,5 @@
 ﻿using System.Data;
+using System.Text;
 
 class Program
 {
@@ -9,12 +10,26 @@ class Program
         System.Console.WriteLine("Enter Username:");
         string? username=Console.ReadLine();
         System.Console.WriteLine("Enter Password:");
-        string? passowrd=Console.ReadLine();
+        string? passowrd = "";
+        while(true){
+            ConsoleKeyInfo i = Console.ReadKey(true);
+            if(i.KeyChar == Convert.ToChar(13)){
+                break;
+            }
+            // Console.WriteLine(i.KeyChar);
+            passowrd += i.KeyChar;
+            Console.Write(" ");
+        }
+        Console.WriteLine();
+        // Console.WriteLine(passowrd);
 
         // int navigate = Convert.ToInt32(Console.ReadLine());
         UserRepository userRepository = new UserRepository();
         User user = userRepository.LoginUser(username,passowrd);
+        // Console.WriteLine(user.UserRole);
+        if(user.UserRole != null)
         user.UserRole = user.UserRole.ToLower();
+        else Environment.Exit(0);
         switch(user.UserRole){
             case "teacher":
                 TeacherAction.TeacherSequence(user);
